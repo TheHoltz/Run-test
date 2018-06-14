@@ -38,8 +38,7 @@ aleatCheck <- function(rnd, esT) {
   ifelse(length(sort(unique(rnd$Sequencias))[which(aux[[1]] == aux[[1]][sum(cumsum(aux[[1]]) <= 0.05)])]) == 0, 
          aux[[2]][2] <- 0, 
          aux[[2]][2] <- sort(unique(rnd$Sequencias))[which(aux[[1]] == aux[[1]][sum(cumsum(aux[[1]]) <= 0.05)])])
-  if(esT > aux[[2]][1]){
-    if(esT < aux[[2]][2])
+  if(esT > aux[[2]][1] || esT < aux[[2]][2]){
     aux[[2]] <- paste0('Rejeita-se H0, p-valor: ', 1-((sum(rnd$Sequencias > 7) + sum(rnd$Sequencias < 7))/length(rnd$Sequencias)))
   } else {
     aux[[2]] <- paste0('Não se rejeita H0, p-valor: ', 1-((sum(rnd$Sequencias > 7) + sum(rnd$Sequencias < 7))/length(rnd$Sequencias)))
