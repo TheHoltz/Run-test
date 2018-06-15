@@ -5,4 +5,4 @@ This test will check if two events are equiprobable.
 
 ![](https://i.imgur.com/PhnsZWf.png)
 
-![](https://i.imgur.com/ehBZ3v4g.png)
+![](https://i.imgur.com/eOfNZ1E.png)
